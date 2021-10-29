@@ -3,16 +3,21 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 
 const ColorSpan = styled("span")({
-  color: "pink"
+  color: "#e947e3"
+});
+
+const ColorHeading = styled("h1")({
+  color: "#efefef"
 });
 
 const IndexPage = () => {
   return (
     <Layout>
-      <h1>
-        Hello, I&apos;m <ColorSpan>Gabriele Stefani</ColorSpan>
-      </h1>
-      <h2>I&apos;m a full-stack web developer.</h2>
+      <ColorHeading>
+        Hello, I&apos;m <ColorSpan>Gabriele Stefani</ColorSpan>.
+        <br />
+        I&apos;m a full-stack web developer.
+      </ColorHeading>
     </Layout>
   );
 };

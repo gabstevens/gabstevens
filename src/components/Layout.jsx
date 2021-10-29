@@ -1,8 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 import "../styles/global.css";
+import Head from "./Head";
+
+const MainContainer = styled("main")({
+  margin: "2rem"
+});
 
 const Layout = ({ children }) => {
-  return <main>{children}</main>;
+  return (
+    <>
+      <Head />
+      <MainContainer>{children}</MainContainer>
+    </>
+  );
 };
 
 export default Layout;

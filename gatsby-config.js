@@ -3,5 +3,13 @@ module.exports = {
     siteUrl: "https://gabstevens.com",
     title: "gabstevens"
   },
-  plugins: []
+  plugins: [
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "gabstevens",
+        region: "eu-central-1"
+      }
+    }
+  ]
 };
