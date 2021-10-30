@@ -9,9 +9,9 @@ const Head = () => {
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /> */}
       {/* {(article ? true : null) && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && <meta property="og:description" content={seo.description} />}
