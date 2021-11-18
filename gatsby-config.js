@@ -11,8 +11,18 @@ module.exports = {
         region: "eu-central-1"
       }
     },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: ["G-KLFBQ9W7EN"],
+        pluginConfig: {
+          head: true
+        }
+      }
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sass",
-    "gatsby-plugin-web-font-loader"
+    "gatsby-plugin-web-font-loader",
+    "gatsby-plugin-react-helmet"
   ]
 };
