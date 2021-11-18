@@ -4,9 +4,6 @@ import styled from "styled-components";
 const FooterContainer = styled("footer")({
   marginTop: "2rem",
   width: "calc(100vw - 2rem)",
-  "@media (max-width: 600px)": {
-    width: "calc(100% - 1rem)"
-  },
   backgroundColor: "rgba(255,255,255,0.1)",
   boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
   backdropFilter: "blur(4px)",
