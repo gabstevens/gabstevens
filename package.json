@@ -14,12 +14,15 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint --fix '**/*.+(js|jsx)'",
-    "deploy": "gatsby-plugin-s3 deploy"
+    "deploy": "gatsby-plugin-s3 deploy --yes && aws cloudfront create-invalidation --distribution-id E6SM6BVTXK0EF --paths \"/*\""
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.3",
     "gatsby": "^4.0.1",
+    "gatsby-plugin-canonical-urls": "^4.7.0",
     "gatsby-plugin-google-gtag": "^4.1.0",
+    "gatsby-plugin-manifest": "^4.7.0",
+    "gatsby-plugin-offline": "^5.7.0",
     "gatsby-plugin-react-helmet": "^5.1.0",
     "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sass": "^5.0.0",

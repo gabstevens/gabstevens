@@ -6,10 +6,15 @@ const Head = () => {
   const titleTemplate = "%s";
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <Helmet
+      title={seo.title}
+      titleTemplate={titleTemplate}
+      htmlAttributes={{
+        lang: "en"
+      }}
+    >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      <meta name="theme-color" content="#0C0F16" />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
