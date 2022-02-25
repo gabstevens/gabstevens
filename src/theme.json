@@ -1,0 +1,14 @@
+{
+  "palette": {
+    "main": {
+      "primary": "#ff9c00",
+      "secondary": "#003566",
+      "text": "white",
+      "from": "#1A2E74",
+      "to": "#091E34"
+    },
+    "light": {
+      "primary": "#fbb13c"
+    }
+  }
+}

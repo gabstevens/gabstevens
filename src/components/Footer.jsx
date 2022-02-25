@@ -1,25 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 
-const FooterContainer = styled("footer")({
-  marginTop: "2rem",
-  width: "calc(100vw - 2rem)",
-  backgroundColor: "rgba(255,255,255,0.1)",
-  boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-  backdropFilter: "blur(4px)",
-  "-webkit-backdrop-filter": "blur(4px)",
-  borderRadius: "2rem 2rem 0 0",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  padding: "1rem"
-});
+const FooterContainer = styled.footer`
+  width: 100%;
+  background-color: white;
+  color: ${({ theme }) => theme.palette.main.secondary};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const MailTo = styled.a`
+  text-decoration: underline;
+`;
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <FooterContainer>
       <h1>Gabriele Stefani</h1>
-      <span>&copy;2021</span>
+      <MailTo href="mailto:gabristefani99@gmail.com?subject=I have an offer for you">
+        gabristefani99@gmail.com
+      </MailTo>
+      <span>&copy;{year}</span>
     </FooterContainer>
   );
 };

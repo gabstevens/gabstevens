@@ -29,6 +29,14 @@ module.exports = {
         siteUrl: "https://gabstevens.dev"
       }
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /icons/
+        }
+      }
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sass",
     "gatsby-plugin-web-font-loader",

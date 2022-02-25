@@ -1,47 +1,61 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import "../styles/global.scss";
+import theme from "../theme.json";
 import Footer from "./Footer";
 import Head from "./Head";
 
-const MainContainer = styled("main")({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  margin: "auto",
-  maxWidth: "1440px",
-  marginLeft: "auto",
-  marginRight: "auto",
-  "@media (max-width: 1440px)": {
-    maxWidth: "70%"
-  },
-  "@media (max-width: 600px)": {
-    maxWidth: "100%",
-    margin: 1
-    // margin: "0 0.5rem"
-  }
-});
+const GlobalStyle = createGlobalStyle`
+html {
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+}
 
-const OuterContainer = styled("div")({
-  height: "100vh",
-  width: "100vw",
-  overflow: "auto"
-});
+body {
+  margin: 0;
+  font-size: 125%;
+  color: white;
+  background: ${({ theme }) =>
+    `radial-gradient(ellipse at bottom,  ${theme.palette.main.from} 0%, ${theme.palette.main.to} 100%)`};
+  // @media (max-width: 600px) {
+  //   font-size: 75%;
+  // }
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+`;
+
+const MainContainer = styled.main`
+  width: 100%;
+`;
+
+const OuterContainer = styled.div`
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+`;
 
 const BackgroundContainer = styled("div")({
   position: "absolute",
   top: 0,
   left: 0,
   height: "100vh",
-  width: "100vw",
+  width: "100%",
   overflow: "hidden",
   zIndex: -1
 });
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Head />
+      <GlobalStyle />
       <BackgroundContainer>
         <div id="stars" />
         <div id="stars2" />
@@ -53,7 +67,7 @@ const Layout = ({ children }) => {
           <Footer />
         </MainContainer>
       </OuterContainer>
-    </>
+    </ThemeProvider>
   );
 };
 
