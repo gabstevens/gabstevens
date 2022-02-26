@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import curriculumVitae from "../../assets/GabrieleStefaniCVen.pdf";
 import CurriculuVitaeIcon from "../../assets/icons/curriculum-vitae-icon.svg";
+import EmailIcon from "../../assets/icons/email-icon.svg";
 import GithubIcon from "../../assets/icons/github-icon.svg";
 import LinkedinIcon from "../../assets/icons/linkedin-icon.svg";
 import Section from "../Section";
@@ -64,6 +65,12 @@ const ContactsSection = () => {
   ]);
   return (
     <Section name="contacts" title="Contacts" transparent>
+      <ContactToolbar>
+        <ContactLink href="mailto:gabristefani99@gmail.com?subject=I have an offer for you">
+          <EmailIcon />
+          <span>Email Me</span>
+        </ContactLink>
+      </ContactToolbar>
       <ContactToolbar>
         {contactButtons.map(({ Icon, label, href, download }) => (
           <ContactLink key={label} href={href} download={download}>
