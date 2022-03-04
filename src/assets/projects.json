@@ -1,28 +1,36 @@
 [
   {
     "title": "MAMBO",
-    "from": "2021-11-01T00:00:00+0100",
+    "from": 1635721200,
     "to": null,
     "description": "M.A.M.B.O. stands for Mobile App Mito Banking Online. It is a mobile home banking app for Banca di Cambiano (an italian bank), both for iOS and Android platforms. The app is built in state-of-the-art Ionic Angular, so it was essentially developed once for the web and then converted in native iOS and Android using Capacitor. The services underneath were built 10 years ago in Java and used SOAP, so we wrapped them in a Java Spring application. The dev team was made of 2 people, me on the FE (the mobile app) and another dev on the BE. We used the SCRUM development methodolgy and in the team there were a SCRUM master and a Product Owner too.",
     "images": []
   },
   {
     "title": "ViCo",
+    "from": 1612134000,
+    "to": null,
     "description": "ViCO stands for Virtual Congress. It is an online platform where you can build a congress and people can partecipate from their home. It is integrated with Zoom and other video stream services. The FE is built in React and MaterialUI while the BE is built in Rails and PostgreSQL. We used a SCRUM like development methodology based on a 2 week sprint but with a very small team, only 2 people. I took care of the FE, writing some code of BE now and then.",
     "images": []
   },
   {
     "title": "UpBase",
+    "from": 1583017200,
+    "to": null,
     "description": "UpBase is a platform where inverstors and startuppers can match. It is integrated with Firebase. The FE is built in React and MaterialUI and the BE is built in Rails. We used a SCRUM like development methodology based on a 2 week sprint but with a very small team, only 2 people. I took care of the FE, writing some code of BE now and then.",
     "images": []
   },
   {
     "title": "Revisoft",
+    "from": 1612134000,
+    "to": null,
     "description": "Revisoft is a web application to deal with the italian companies accounting and reporting. We had to convert an old windows application that was doing this to a web app, making it from scratch. The whole application was built in Laravel, with a FE made in React served from the BE using Inertia.js. I started working on this project after two weeks from his beginning and a few weeks later I was left autonomous, leading the development on most of the project.",
     "images": []
   },
   {
     "title": "SAAT",
+    "from": 1598914800,
+    "to": 1604185200,
     "description": "S.A.A.T. stands for Semi Automatic Annotation Tool. It was my bachelor's thesis and it aims to automate most of the process of annotating images to produce object recognizer datasets. The BE is built in Django and used Redis queue and YOLO object recognizer to preprocess images. The FE is built in React and MaterialUI and has several features that help users annotate images or correct the preprocessing.",
     "images": []
   }

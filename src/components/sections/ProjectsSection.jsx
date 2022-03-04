@@ -26,15 +26,25 @@ const ProjectDescription = styled.p``;
 const ProjectsSection = () => {
   return (
     <Section name="projects" title="Projects">
-      {projects.map(({ title, description, images }) => (
-        <ProjectContainer key={title}>
-          <ProjectTitle>{title}</ProjectTitle>
-          <ProjectDescription>{description}</ProjectDescription>
-          {images.map((img, index) => (
-            <img key={img} src={img} alt={`${title} - ${index}`} />
-          ))}
-        </ProjectContainer>
-      ))}
+      {projects.map(({ title, description, from, to, images }) => {
+        const formatter = new Intl.DateTimeFormat("it");
+        const start = formatter.format(new Date(from));
+        const end = to ? formatter.format(new Date(to)) : "Current";
+        return (
+          <ProjectContainer key={title}>
+            <ProjectTitle>
+              {title}
+              <span>
+                {start} - {end}
+              </span>
+            </ProjectTitle>
+            <ProjectDescription>{description}</ProjectDescription>
+            {images.map((img, index) => (
+              <img key={img} src={img} alt={`${title} - ${index}`} />
+            ))}
+          </ProjectContainer>
+        );
+      })}
     </Section>
   );
 };

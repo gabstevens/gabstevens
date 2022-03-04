@@ -94,7 +94,7 @@ const SkillsSection = () => {
     <Section name="skills" title="Skills" transparent>
       <Row>
         <Column>
-          <ChartTitle>Languages</ChartTitle>
+          <ChartTitle>Frameworks</ChartTitle>
           <ChartContainer>
             <PieChartContainer>
               <PieChart
@@ -126,7 +126,7 @@ const SkillsSection = () => {
           </ChartContainer>
         </Column>
         <Column>
-          <ChartTitle>Frameworks</ChartTitle>
+          <ChartTitle>Languages</ChartTitle>
           <ChartContainer>
             <PieChartContainer>
               <PieChart

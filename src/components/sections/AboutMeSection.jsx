@@ -33,8 +33,8 @@ const BoldText = styled.span`
 `;
 
 const AboutMeSection = () => {
-  const [brithDate] = useState(new Date("19 Jan 1999 00:00:00 GMT+1"));
-  const [startDate] = useState(new Date("01 Dec 2018 00:00:00 GMT+1"));
+  const [brithDate] = useState(new Date(1999, 0, 19));
+  const [startDate] = useState(new Date(2018, 11, 1));
   const myAge = Math.abs(new Date(Date.now() - brithDate).getUTCFullYear() - 1970);
   const workingYear = Math.abs(new Date(Date.now() - startDate).getUTCFullYear() - 1970);
 
