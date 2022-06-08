@@ -2,7 +2,11 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const Head = () => {
-  const seo = { title: "Gabriele Stefani", description: "Gabriele Stefani developer portfolio" };
+  const seo = {
+    title: "Gabriele Stefani developer portfolio",
+    description:
+      "I'm Gabriele Stefani a software developer with a Bachelor Degree in Software Engineering and some years of working experience. I love coding."
+  };
   const titleTemplate = "%s";
 
   return (

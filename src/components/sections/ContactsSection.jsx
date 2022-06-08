@@ -54,26 +54,40 @@ const ContactLink = styled.a`
 
 const ContactsSection = () => {
   const [contactButtons] = useState([
-    { Icon: LinkedinIcon, label: "LinkedIn", href: "https://www.linkedin.com/in/gabrielestefani/" },
-    { Icon: GithubIcon, label: "GitHub", href: "https://github.com/GabryHawk" },
+    {
+      Icon: LinkedinIcon,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/gabrielestefani/",
+      title: "LinkedIn profile"
+    },
+    {
+      Icon: GithubIcon,
+      label: "GitHub",
+      href: "https://github.com/GabryHawk",
+      title: "GitHub profile"
+    },
     {
       Icon: CurriculuVitaeIcon,
       label: "Curriculum Vitae",
       href: curriculumVitae,
-      download: "GabrieleStefaniCVen.pdf"
+      download: "GabrieleStefaniCVen.pdf",
+      title: "Curriculum Vitae"
     }
   ]);
   return (
     <Section name="contacts" title="Contacts" transparent>
       <ContactToolbar>
-        <ContactLink href="mailto:gabristefani99@gmail.com?subject=I have an offer for you">
+        <ContactLink
+          href="mailto:gabristefani99@gmail.com?subject=I have an offer for you"
+          title="Send mail to"
+        >
           <EmailIcon />
           <span>Email Me</span>
         </ContactLink>
       </ContactToolbar>
       <ContactToolbar>
-        {contactButtons.map(({ Icon, label, href, download }) => (
-          <ContactLink key={label} href={href} download={download}>
+        {contactButtons.map(({ Icon, label, href, download, title }) => (
+          <ContactLink key={label} href={href} download={download} title={title}>
             <Icon />
             <span>{label}</span>
           </ContactLink>

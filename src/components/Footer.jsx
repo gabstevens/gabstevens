@@ -18,8 +18,11 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <FooterContainer>
-      <h1>Gabriele Stefani</h1>
-      <MailTo href="mailto:gabristefani99@gmail.com?subject=I have an offer for you">
+      <h2>Gabriele Stefani</h2>
+      <MailTo
+        href="mailto:gabristefani99@gmail.com?subject=I have an offer for you"
+        title="Send mail to"
+      >
         gabristefani99@gmail.com
       </MailTo>
       <span>&copy;{year}</span>
