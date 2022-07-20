@@ -48,8 +48,8 @@ const AboutMeSection = () => {
           I&apos;m a <BoldText> {myAge} </BoldText> years old&nbsp;
           <BoldText>software developer</BoldText> with a&nbsp;
           <BoldText> Bachelor Degree in Software Engineering </BoldText> graduated from the
-          Univesità degli Studi di Firenze (University of Florence).
-          <br />I got {workingYear} years of work expirience and now I have been leading projects.
+          Università degli Studi di Firenze (University of Florence).
+          <br />I got {workingYear} years of work experience and now I have been leading projects.
           In addition I can describe myself as a flexible person with a very good attitude towards
           quick learning and problem solving.
         </DescriptionParagraph>
