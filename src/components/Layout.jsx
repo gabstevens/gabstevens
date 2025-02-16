@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/global.scss";
 import Footer from "./Footer";
 import Head from "./Head";
 
@@ -25,7 +24,6 @@ const MainContainer = styled("main")({
 const OuterContainer = styled("div")({
   height: "100vh",
   width: "100vw",
-  overflow: "auto"
 });
 
 const BackgroundContainer = styled("div")({
