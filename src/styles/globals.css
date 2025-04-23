@@ -1,7 +1,7 @@
 /* Import fonts and other CSS files */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 @import "./stars.css";
-@import "./word_rotate.css";
+@import "./word-rotate.css";
 
 html {
   font-size: 100%;
@@ -10,12 +10,18 @@ html {
 
 body {
   margin: 0;
-  color: #efefef;
-  background: radial-gradient(ellipse at bottom, rgb(26, 46, 116) 0%, rgb(9, 30, 52) 100%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
   body { /* Media queries apply to the body in this case */
     font-size: 75%;
   }
+}
+
+#rocket {
+  position: absolute;
 }

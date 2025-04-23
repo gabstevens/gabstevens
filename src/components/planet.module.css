@@ -1,0 +1,35 @@
+@keyframes planet {
+  0% {
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(0.01rem, 0.02rem) rotate(90deg) scale(0.95);
+  }
+  37.5% {
+    transform: translate(-0.02rem, 0.01rem) rotate(135deg) scale(0.98);
+  }
+  50% {
+    transform: translate(0.03rem, -0.01rem) rotate(180deg) scale(0.93);
+  }
+  62.5% {
+    transform: translate(-0.01rem, 0.02rem) rotate(225deg) scale(0.97);
+  }
+  75% {
+    transform: translate(0.01rem, 0.02rem) rotate(270deg) scale(0.92);
+  }
+  87.5% {
+    transform: translate(-0.02rem, -0.02rem) rotate(315deg) scale(0.95);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px) rotate(360deg) scale(1);
+  }
+}
+
+.planet {
+  position: absolute;
+  animation: planet 15s infinite linear;
+}
+
+.planetContainer {
+  position: relative;
+}

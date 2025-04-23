@@ -1,0 +1,52 @@
+.word-rotate-animation {
+  animation: rotate 12.5s linear infinite 0s;
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  left: 0;
+  right: 0;
+}
+
+.word-rotate-animation:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.word-rotate-animation:nth-child(3) {
+  animation-delay: 5s;  
+}
+
+.word-rotate-animation:nth-child(4) {
+  animation-delay: 7.5s;
+}
+
+.word-rotate-animation:nth-child(5) {
+  animation-delay: 10s; 
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

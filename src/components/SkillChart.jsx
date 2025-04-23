@@ -18,8 +18,7 @@ const ChartContainer = styled("div")({
   background: "rgba(255, 255, 255, 0.1)",
   boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
   backdropFilter: "blur(4px)",
-  "-webkit-backdrop-filter": "blur(4px)",
-  // border: "1px solid rgba(255, 255, 255, 0.18)",
+  border: "1px solid rgba(255, 255, 255, 0.18)",
   "& > *:not(:last-child)": {
     marginBottom: "0.5rem"
   }
