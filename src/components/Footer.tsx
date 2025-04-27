@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -15,6 +14,6 @@ const FooterContainer = styled.footer({
 
 const currentYear = new Date().getFullYear();
 
-const Footer = () => <FooterContainer><Image src="/planet-surface.png" width="200" height="100" />© {currentYear} Gabriele Stefani</FooterContainer>;
-
-export default Footer;
+export default function Footer() {
+  return <FooterContainer>© {currentYear} Gabriele Stefani</FooterContainer>;
+}

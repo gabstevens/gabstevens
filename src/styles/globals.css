@@ -1,11 +1,10 @@
 /* Import fonts and other CSS files */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-@import "./stars.css";
-@import "./word-rotate.css";
 
 html {
   font-size: 100%;
   font-family: "Source Code Pro", sans-serif;
+  color: #efefef;
 }
 
 body {
@@ -17,11 +16,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  body { /* Media queries apply to the body in this case */
+  body {
     font-size: 75%;
   }
-}
-
-#rocket {
-  position: absolute;
 }

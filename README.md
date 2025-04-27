@@ -1,54 +1,77 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# gabstevens.dev
+Gabriele Stefani's personal website.
 
-## 🚀 Quick start
+## Requirements
+* Intro page (full screen size):
+  * Heading: "Hello World, I'm Gabriele and I'm a Software Engineer!" (possibly with rotating translations)
+  * Paragraph: Short personal description
+  * Top: show planet surface with rocket ready to depart.
+* Scrollable content: timeline of projects (4/5 projects), each of them has a planet next to it
+* Parallax effect with 4/5 layers:
+  1. Deep Background (Stars, Nebulae):
+    * Movement: Almost static or moves very slowly upwards as you scroll down (parallax rate close to 0). This creates the deepest layer of depth.
+    * Animation: Subtle twinkling stars (can be done with CSS).
+  2. Mid-Ground (Distant Small Planets, Asteroid Fields):
+    * Movement: Moves upwards slower than the content scroll speed, but faster than the deep background (e.g., parallax rate 0.2-0.4). They drift by gently.
+    * Animation: Maybe slow, subtle rotation on their own axis. Could fade in/out gently at the edges of the screen.
+  3. Content-Level Planets (Associated with your paragraphs):
+    * Movement: These appear alongside your text content. They should move upwards at a speed close to the natural scroll speed, but slightly slower (parallax rate 0.6-0.8). This makes them feel anchored near the content but still part of the background depth.
+    * Placement: Position them strategically near the relevant text block (left, right, maybe slightly behind a semi-transparent content background).
+    * Animation:
+  4. Gentle Bobbing: Slow up-and-down or side-to-side floating motion (CSS animation) independent of scroll.
+    * Self-Rotation: Slow rotation adds life.
+    * Entry/Exit: Could slide in from the side or fade in as the relevant content section scrolls into view (use Intersection Observer).
+  5. Foreground Elements (Optional: Close Asteroids, Space Debris):
+    * Movement: Moves upwards faster than the natural scroll speed (parallax rate > 1, e.g., 1.2-1.5). These zip by quickly, creating a strong sense of foreground depth.
+    * Animation: Could be fast-moving blurs or quickly rotating small objects. Use sparingly to avoid clutter.
+* End with footer and contact options/links
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Roadmap
+* Design website (figma?)
+* Scaffold package:
+  * Replace gatsby with next.js (replace current features like gtag)
+  * Make repo public
+  * Setup CI/CD with GitHub Pages
+  * Link `gabstevens.dev` to GitHub Pages
+* Draft content:
+  * Short personal description
+  * Create timeline:
+    * List 4/5 projects (personal and work):
+    * Write short descriptoin
+* Create assets:
+  * Deep space background
+  * 3 distant small planets and 3 asteroid fields for mid-ground layer
+  * 4/5 planets (one for each project in the timeline)
+  * 2 close asteroids and 2 space derbis for foreground layer (optional)
+  * Starting planet surface
+  * Rocketship
+* Add content:
+  * Add full screen intro with heading in the center
+  * Add small short descriptoin below the fold
+  * Add timeline with planets under short description
+  * Add footer with contact options
+* Add layers and parallax effect to scroll:
+  * Create layers and add content to each
+  * Animate scrolling using GSAP
+* Add planet surface with rocket to intro page
+* Animate rocket:
+  * Rocket departs from planet surface as soon as scroll starts
+    * (Optional) Animate flying sequence
+  * Rocket flys down through the planets while scrolling down (bind to scroll event or trigger animation using IntersectionObserver API)
+  * Rocket lands on footer (should footer be a planet or space station?)
+  * (Optional) Add sign to scroll down to start rocket
+  * (Optional) Add sound to rocket
+* Add translations for the website
+* Test a11y
+* (Optional) Add rotating heading with different translations
+* (Optional) Add option to invert scrolling experience (intro on the bottom and scroll up to see content) so that rocket goes up:
+  * Button with tooltip to invert scrolling
+  * Animate changing order
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Development
+* Use `npm run dev` to start dev environment
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## Deploy
+* Deploy to github pages
+* Link to `gabstevens.dev`
