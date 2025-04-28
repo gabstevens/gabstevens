@@ -28,50 +28,50 @@ Gabriele Stefani's personal website.
 
 
 ## Roadmap
-* Design website (figma?)
-* Scaffold package:
-  * Replace gatsby with next.js (replace current features like gtag)
-  * Make repo public
-  * Setup CI/CD with GitHub Pages
-  * Link `gabstevens.dev` to GitHub Pages
-* Draft content:
-  * Short personal description
-  * Create timeline:
-    * List 4/5 projects (personal and work):
-    * Write short descriptoin
-* Create assets:
-  * Deep space background
-  * 3 distant small planets and 3 asteroid fields for mid-ground layer
-  * 4/5 planets (one for each project in the timeline)
-  * 2 close asteroids and 2 space derbis for foreground layer (optional)
-  * Starting planet surface
-  * Rocketship
-* Add content:
-  * Add full screen intro with heading in the center
-  * Add small short descriptoin below the fold
-  * Add timeline with planets under short description
-  * Add footer with contact options
-* Add layers and parallax effect to scroll:
-  * Create layers and add content to each
-  * Animate scrolling using GSAP
-* Add planet surface with rocket to intro page
-* Animate rocket:
-  * Rocket departs from planet surface as soon as scroll starts
-    * (Optional) Animate flying sequence
-  * Rocket flys down through the planets while scrolling down (bind to scroll event or trigger animation using IntersectionObserver API)
-  * Rocket lands on footer (should footer be a planet or space station?)
-  * (Optional) Add sign to scroll down to start rocket
-  * (Optional) Add sound to rocket
-* Add translations for the website
-* Test a11y
-* (Optional) Add rotating heading with different translations
-* (Optional) Add option to invert scrolling experience (intro on the bottom and scroll up to see content) so that rocket goes up:
-  * Button with tooltip to invert scrolling
-  * Animate changing order
+0. ⚪ - Design website (figma?)
+1. 🟢 - Scaffold package:
+  * 🟢 - Replace gatsby with next.js (replace current features like gtag)
+  * 🟢 - Make repo public
+  * 🟢 - Setup CI/CD with GitHub Pages
+2. 🟠 - Draft content:
+  * 🟢 - Short personal description
+  * ⚪ - Create timeline:
+    * ⚪ - List 4/5 projects (personal and work):
+    * ⚪ - Write short descriptoin
+3. ⚪ - Create assets:
+  * ⚪ - Deep space background
+  * ⚪ - 3 distant small planets and 3 asteroid fields for mid-ground layer
+  * ⚪ - 4/5 planets (one for each project in the timeline)
+  * ⚪ - 2 close asteroids and 2 space derbis for foreground layer (optional)
+  * ⚪ - Starting planet surface
+  * ⚪ - Rocketship
+4. ⚪ - Add content:
+  * ⚪ - Add full screen intro with heading in the center
+  * ⚪ - Add small short descriptoin below the fold
+  * ⚪ - Add timeline with planets under short description
+  * ⚪ - Add footer with contact options
+5. ⚪ - Add layers and parallax effect to scroll:
+  * ⚪ - Create layers and add content to each
+  * ⚪ - Animate scrolling using GSAP
+6. ⚪ - Add planet surface with rocket to intro page
+7. ⚪ - Animate rocket:
+  * ⚪ - Rocket departs from planet surface as soon as scroll starts
+    * ⚪ - (Optional) Animate flying sequence
+  * ⚪ - Rocket flys down through the planets while scrolling down (bind to scroll event or trigger animation using IntersectionObserver API)
+  * ⚪ - Rocket lands on footer (should footer be a planet or space station?)
+  * ⚪ - (Optional) Add sign to scroll down to start rocket
+  * ⚪ - (Optional) Add sound to rocket
+8. Final config:
+  * ⚪ - Link `gabstevens.dev` to GitHub Pages
+  * ⚪ - Add metadata
+  * ⚪ - Add translations for the website
+9. ⚪ - Tune performance and a11y
+10. ⚪ - Optionals
+  * ⚪ - (Optional) Add rotating heading with different translations
+  * ⚪ - (Optional) Add option to invert scrolling experience (intro on the bottom and scroll up to see content) so that rocket goes up:
+    * ⚪ - Button with tooltip to invert scrolling
+    * ⚪ - Animate changing order
 
 ## Development
+* Use `npm install` to install dependencies
 * Use `npm run dev` to start dev environment
-
-## Deploy
-* Deploy to github pages
-* Link to `gabstevens.dev`
