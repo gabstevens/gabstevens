@@ -1,3 +1,4 @@
+"use client";
 import styled, { keyframes } from "styled-components";
 
 const greetingList = [
@@ -8,7 +9,7 @@ const greetingList = [
   "Hello, I'm"
 ] as const;
 
-const TEXT = "I'm a Software Engineer."
+const TEXT = "I'm a Software Engineer.";
 
 const rotateSentence = keyframes`
   0% {
@@ -39,7 +40,12 @@ const rotateSentence = keyframes`
 `;
 
 const Container = styled.section`
+  height: 100vh;
   width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  place-content: center;
 `;
 
 type RotatingLineProps = {
@@ -49,7 +55,6 @@ type RotatingLineProps = {
 const RotatingLine = styled.span<RotatingLineProps>`
   animation: ${rotateSentence} 12.5s linear infinite 0s;
   position: absolute;
-  display: inline-block;
   opacity: 0;
   left: 0;
   right: 0;
