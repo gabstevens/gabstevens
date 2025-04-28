@@ -8,6 +8,8 @@ const greetingList = [
   "Hello, I'm"
 ] as const;
 
+const TEXT = "I'm a Software Engineer."
+
 const rotateSentence = keyframes`
   0% {
     opacity: 0;
@@ -76,7 +78,7 @@ const Hero = () => {
           </RotatingLine>
         ))}
         <br />
-        I'm a Software Engineer.
+        {TEXT}
       </Heading>
     </Container>
   );
