@@ -1,5 +1,7 @@
 "use client";
 import styled from "styled-components";
+const TEXT =
+  "As a Software Engineer with deep expertise in frontend development, primarily using React, I'm passionate about building functional projects that are valuable to users. I enjoy bringing the entire project to life from concept to completion.";
 
 const Paragraph = styled.p`
   font-size: 1.2rem;
@@ -9,11 +11,5 @@ const Paragraph = styled.p`
 `;
 
 export default function AboutMe() {
-  return (
-    <Paragraph>
-      As a Software Engineer with deep expertise in frontend development, primarily using React, I'm
-      passionate about building functional projects that are valuable to users. I enjoy bringing the
-      entire project to life from concept to completion.
-    </Paragraph>
-  );
+  return <Paragraph>{TEXT}</Paragraph>;
 }
